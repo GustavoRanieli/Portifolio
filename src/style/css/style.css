@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800&display=swap");
+html {
+  font-family: "Montserrat", sans-serif;
+}
+html button {
+  cursor: pointer;
+}
+
+.HeaderGrid {
+  padding: 2%;
+  background-color: #050402;
+  display: grid;
+}
+
+.headerFlex {
+  grid-template-columns: 30% 30% 30%;
+}
+@media screen and (max-width: 950px) {
+  .headerFlex {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+.logoHeader {
+  width: auto;
+  height: 3vw;
+  margin: 0% 55%;
+}
+@media screen and (max-width: 1000px) {
+  .logoHeader {
+    height: 5vw;
+  }
+}
+
+.linksHeader {
+  display: flex;
+  flex-direction: row;
+  padding-top: 1%;
+  text-align: center;
+  padding-left: 2%;
+  margin: 0% 15%;
+}
+.linksHeader a {
+  margin: 0% 10%;
+  font-size: 1vw;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+}
+@media screen and (max-width: 1000px) {
+  .linksHeader a {
+    font-size: 1vw;
+  }
+}
+.linksHeader a:hover {
+  color: #855330;
+}
+
+.headerFlex {
+  display: flex;
+  flex-direction: row;
+}
+
+.linksRedesHeader {
+  padding-top: 1%;
+  margin: 0% 15%;
+}
+.linksRedesHeader a {
+  font-size: 1vw;
+  margin: 0% 5%;
+  color: #855330;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.bannerGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #050402;
+}
+@media screen and (max-width: 1000px) {
+  .bannerGrid {
+    grid-template-columns: auto;
+  }
+}
+
+.divText {
+  width: 80%;
+  margin: 15% auto;
+  color: #fff;
+}
+.divText h1 {
+  font-size: 3vw;
+  font-weight: 800;
+  margin-bottom: 1%;
+}
+.divText p {
+  font-size: 1vw;
+  font-weight: 500;
+}
+@media screen and (max-width: 1000px) {
+  .divText p {
+    font-size: 2vw;
+  }
+}
+
+.divImg {
+  width: 80%;
+  margin: 0% auto;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .divImg {
+    display: none;
+  }
+}
+.divImg img {
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: -0.4%;
+  height: auto;
+  width: 70%;
+}
+
+.divIcons {
+  background-color: #131419;
+}
+
+.flexIcons {
+  display: flex;
+  flex-direction: row;
+  padding: 2%;
+  text-align: center;
+  justify-content: center;
+}
+.flexIcons img {
+  width: 5%;
+  height: auto;
+  margin: 0% 2%;
+}
+
+.sobreGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #1c1d24;
+  padding: 5%;
+}
+@media screen and (max-width: 1000px) {
+  .sobreGrid {
+    grid-template-columns: auto;
+  }
+}
+.sobreGrid .divIgmSobre {
+  justify-content: center;
+  text-align: center;
+}
+.sobreGrid .divIgmSobre img {
+  width: 50%;
+  height: auto;
+  border: transparent;
+  border-radius: 10px;
+  margin: 5% 0%;
+  margin-left: 20%;
+  box-shadow: -41px 45px 5px 0px rgba(133, 83, 48, 0.75);
+  -webkit-box-shadow: -41px 45px 5px 0px rgba(133, 83, 48, 0.75);
+  -moz-box-shadow: -41px 45px 5px 0px rgba(133, 83, 48, 0.75);
+}
+@media screen and (max-width: 1000px) {
+  .sobreGrid .divIgmSobre img {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    width: 45vw;
+    height: 45vw;
+    margin-left: 0;
+  }
+}
+.sobreGrid .divTextSobre {
+  margin: 5% auto;
+}
+@media screen and (max-width: 1000px) {
+  .sobreGrid .divTextSobre {
+    width: 95%;
+  }
+}
+.sobreGrid .divTextSobre .titleSobre h1 {
+  color: #fff;
+  font-size: 2vw;
+  font-weight: 800;
+}
+@media screen and (max-width: 1000px) {
+  .sobreGrid .divTextSobre .titleSobre h1 {
+    font-size: 3vw;
+  }
+}
+.sobreGrid .divTextSobre .titleSobre p {
+  color: #593b2a;
+  font-size: 1vw;
+  margin-top: 1%;
+  font-weight: 600;
+}
+@media screen and (max-width: 1000px) {
+  .sobreGrid .divTextSobre .titleSobre p {
+    font-size: 2vw;
+  }
+}
+.sobreGrid .divTextSobre .paragraphSobre {
+  margin-top: 5%;
+  width: 80%;
+}
+@media screen and (max-width: 1000px) {
+  .sobreGrid .divTextSobre .paragraphSobre {
+    width: 100%;
+  }
+}
+.sobreGrid .divTextSobre .paragraphSobre p {
+  font-size: 1vw;
+  color: #d3d3d3;
+  line-height: 150%;
+  font-weight: 500;
+}
+@media screen and (max-width: 1000px) {
+  .sobreGrid .divTextSobre .paragraphSobre p {
+    font-size: 2vw;
+  }
+}
+.sobreGrid .divTextSobre .paragraphSobre button {
+  background-color: #ac6b34;
+  border: transparent;
+  border-radius: 5px;
+  margin-top: 5%;
+  color: #fff;
+  padding: 2%;
+  font-size: 0.8vw;
+  font-weight: 700;
+}
+@media screen and (max-width: 1000px) {
+  .sobreGrid .divTextSobre .paragraphSobre button {
+    font-size: 2vw;
+  }
+}
+
+.containerLastWorks {
+  background-color: #050402;
+  padding: 5%;
+  justify-content: center;
+}
+.containerLastWorks .lastWorksTitle {
+  text-align: center;
+  width: 50%;
+  margin: 0% auto;
+}
+.containerLastWorks .lastWorksTitle h1 {
+  color: #fff;
+  font-size: 2vw;
+  font-weight: 800;
+}
+@media screen and (max-width: 1000px) {
+  .containerLastWorks .lastWorksTitle h1 {
+    font-size: 3.5vw;
+  }
+}
+.containerLastWorks .lastWorksTitle p {
+  font-size: 1vw;
+  color: #d3d3d3;
+  font-weight: 500;
+  margin-top: 2%;
+}
+@media screen and (max-width: 1000px) {
+  .containerLastWorks .lastWorksTitle p {
+    font-size: 2vw;
+  }
+}
+.containerLastWorks .gridWorks {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  margin-top: 5%;
+}
+@media screen and (max-width: 1000px) {
+  .containerLastWorks .gridWorks {
+    grid-template-columns: auto;
+  }
+}
+.containerLastWorks .gridWorks div {
+  text-align: center;
+  margin: 5% 5%;
+}
+@media screen and (max-width: 1000px) {
+  .containerLastWorks .gridWorks div {
+    width: 60%;
+    margin: 5% auto;
+  }
+}
+.containerLastWorks .gridWorks div a {
+  text-decoration: none;
+}
+.containerLastWorks .gridWorks div img {
+  width: 20vw;
+  height: 15vw;
+  border: transparent;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .containerLastWorks .gridWorks div img {
+    width: 50vw;
+    height: 40vw;
+  }
+}
+.containerLastWorks .gridWorks div h1 {
+  margin-top: 5%;
+  color: #ac6b34;
+  font-size: 1.5vw;
+  font-weight: 800;
+}
+@media screen and (max-width: 1000px) {
+  .containerLastWorks .gridWorks div h1 {
+    font-size: 3vw;
+  }
+}
+.containerLastWorks .gridWorks div .languages {
+  font-size: 1vw;
+  color: #666666;
+}
+.containerLastWorks .gridWorks div p {
+  line-height: 200%;
+  font-size: 1vw;
+  color: #d3d3d3;
+  font-weight: 500;
+  margin-top: 2%;
+}
+@media screen and (max-width: 1000px) {
+  .containerLastWorks .gridWorks div p {
+    font-size: 2vw;
+  }
+}
+.containerLastWorks .gridWorks div .linkGit {
+  color: purple;
+}
+
+.containerCourses {
+  background-color: #131419;
+  padding: 5%;
+  justify-content: center;
+}
+.containerCourses .coursesTitle {
+  text-align: center;
+  width: 50%;
+  margin: 0% auto;
+}
+.containerCourses .coursesTitle h1 {
+  color: #fff;
+  font-size: 2vw;
+  font-weight: 800;
+}
+@media screen and (max-width: 1000px) {
+  .containerCourses .coursesTitle h1 {
+    font-size: 3.5vw;
+  }
+}
+.containerCourses .coursesTitle p {
+  font-size: 1vw;
+  color: #d3d3d3;
+  font-weight: 500;
+  margin-top: 2%;
+}
+@media screen and (max-width: 1000px) {
+  .containerCourses .coursesTitle p {
+    font-size: 2vw;
+  }
+}
+.containerCourses .gridCourses {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  margin-top: 5%;
+}
+@media screen and (max-width: 1000px) {
+  .containerCourses .gridCourses {
+    grid-template-columns: auto;
+  }
+}
+.containerCourses .gridCourses div {
+  text-align: center;
+  background-color: #1c1d24;
+  border: transparent;
+  border-radius: 10px;
+  margin: 2% 5%;
+  padding: 1%;
+}
+@media screen and (max-width: 1000px) {
+  .containerCourses .gridCourses div {
+    margin: 2% auto;
+    width: 80%;
+    padding: 3%;
+  }
+}
+.containerCourses .gridCourses div img {
+  width: 15vw;
+  height: 15vw;
+  border: transparent;
+  border-radius: 10px;
+  margin: 5% 0%;
+}
+@media screen and (max-width: 1000px) {
+  .containerCourses .gridCourses div img {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+.containerCourses .gridCourses div h1 {
+  margin-top: 5%;
+  color: #fff;
+  font-size: 2vw;
+  font-weight: 800;
+}
+@media screen and (max-width: 1000px) {
+  .containerCourses .gridCourses div h1 {
+    margin-top: 0%;
+    font-size: 3vw;
+  }
+}
+.containerCourses .gridCourses div p {
+  line-height: 170%;
+  margin: 5% auto;
+  width: 90%;
+  color: #c7c7c7;
+  font-size: 1vw;
+  font-weight: 500;
+}
+@media screen and (max-width: 1000px) {
+  .containerCourses .gridCourses div p {
+    width: 70%;
+    margin: 1% auto;
+    font-size: 2vw;
+  }
+}
+
+.containerContacteMe {
+  background-color: #050402;
+  padding: 5%;
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe {
+    margin: 0% auto;
+  }
+}
+.containerContacteMe .titleContacteMe {
+  width: 50%;
+  color: #fff;
+  margin: 0% auto;
+  text-align: center;
+}
+.containerContacteMe .titleContacteMe h1 {
+  font-size: 2vw;
+  font-weight: 800;
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe .titleContacteMe h1 {
+    font-size: 3.5vw;
+  }
+}
+.containerContacteMe .titleContacteMe p {
+  margin-top: 2%;
+  color: #c7c7c7;
+  font-size: 1vw;
+  font-weight: 500;
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe .titleContacteMe p {
+    font-size: 2vw;
+  }
+}
+.containerContacteMe .gridContacteMe {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe .gridContacteMe {
+    display: block;
+  }
+}
+.containerContacteMe .gridContacteMe .infoContacteme {
+  margin: 0% auto;
+  margin-left: 20%;
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe .gridContacteMe .infoContacteme {
+    width: 80%;
+    margin: 0% 30%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.containerContacteMe .gridContacteMe .infoContacteme .containerInfor {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin: 5% 0%;
+}
+.containerContacteMe .gridContacteMe .infoContacteme h4 {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1vw;
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe .gridContacteMe .infoContacteme h4 {
+    font-size: 2vw;
+  }
+}
+.containerContacteMe .gridContacteMe .infoContacteme p {
+  color: #d3d3d3;
+  font-weight: 500;
+  margin: 1% 0%;
+  font-size: 1vw;
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe .gridContacteMe .infoContacteme p {
+    font-size: 1.8vw;
+  }
+}
+.containerContacteMe .gridContacteMe .infoContacteme .color {
+  color: #ac6b34;
+}
+.containerContacteMe .gridContacteMe .infoContacteme svg {
+  width: 50% !important;
+  height: auto !important;
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe .gridContacteMe .infoContacteme svg {
+    width: 70% !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe .gridContacteMe .formContacteme {
+    width: 80%;
+    margin: 0% 20%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.containerContacteMe .gridContacteMe .formContacteme input {
+  background-color: #1c1d24;
+  border: transparent;
+  border-radius: 5%;
+  color: #fff;
+  padding: 2%;
+  font-weight: 800;
+  font-size: 0.8vw;
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe .gridContacteMe .formContacteme input {
+    font-size: 1.8vw;
+  }
+}
+.containerContacteMe .gridContacteMe .formContacteme textarea {
+  display: block;
+  margin: 2% 0%;
+  background-color: #1c1d24;
+  border: transparent;
+  font-weight: 700;
+  color: #fff;
+  width: 50%;
+  height: 8vw;
+  padding: 2%;
+  border-radius: 5px;
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe .gridContacteMe .formContacteme textarea {
+    font-size: 1.8vw;
+  }
+}
+.containerContacteMe .gridContacteMe .formContacteme button {
+  padding: 2%;
+  font-size: 1vw;
+  background-color: #ac6b34;
+  border: transparent;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.8vw;
+}
+@media screen and (max-width: 1000px) {
+  .containerContacteMe .gridContacteMe .formContacteme button {
+    font-size: 1.8vw;
+  }
+}
+.containerContacteMe .gridContacteMe .formContacteme .divEmailText {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2%;
+}
+.containerContacteMe .gridContacteMe .formContacteme .divEmailText .email {
+  margin-left: 2%;
+}
+
+.containerFooter {
+  background-color: #131419;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  padding: 2%;
+}
+.containerFooter .divIconsFooter {
+  text-align: center;
+  justify-content: center;
+}
+.containerFooter .divIconsFooter svg {
+  width: 8% !important;
+  height: auto !important;
+  margin: 0% 5%;
+}
+.containerFooter .divLogoFooter {
+  text-align: center;
+  justify-content: center;
+}
+.containerFooter .divLogoFooter img {
+  width: 25%;
+  height: auto;
+}
+.containerFooter p {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1vw;
+  padding-top: 5%;
+  text-align: center;
+  justify-content: center;
+}
+
+.mobileNone {
+  display: none;
+}
+
+.menuMobile {
+  width: 5vw;
+  height: auto;
+  margin-left: 80%;
+}
+
+.closeMobile {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1c1d24;
+  position: fixed;
+  z-index: 1;
+  padding: 2%;
+  border: transparent;
+  border-radius: 10px;
+}
+.closeMobile svg {
+  width: 5vw;
+  height: auto;
+  margin-left: 85%;
+}
+.closeMobile .links {
+  text-align: center;
+  margin-top: 25%;
+  color: #fff;
+  font-weight: 800;
+}
+.closeMobile a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 8vw;
+}
+.closeMobile h5 {
+  margin: 10% 0%;
+}
+
+.modelo3d {
+  height: 500px;
+}
+
+/*# sourceMappingURL=style.css.map */
